@@ -4,15 +4,15 @@ Luminosity Control is a TCC project, open-source to manage locations.
 
 # Technologies
 
-## Back-end / API
+### Back-end / API
 * C#/.NET
 
-## Front-End
+### Front-End
 * HTML
 * CSS
 * JS, AngularJS
 
-## Authors:
+### Authors:
 * Mario Souto
 * Larissa Rodrigues
 * Guilherme Pozzi
