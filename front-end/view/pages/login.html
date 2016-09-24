@@ -1,0 +1,52 @@
+<section class="container">
+	<div class="row">
+		<div class="col offset-m2 m8 s12">
+			<h2 class="timeNow center-align">
+				{{ clock  | date: 'HH:mm:ss' }}
+			</h2>
+			<div class="card horizontal">
+				<form name="funcionarioForm" style="width: 100%; display: block;">
+				<div class="card-stacked">
+					<div class="card-content">
+							<!-- Email-->
+							<div class="row">
+								<div class="input-field col s12">
+									<i class="material-icons prefix">account_circle</i>
+									<input name="FUN_STR_EMAIL" id="FUN_STR_EMAIL" ng-model="manipularFuncionario.FUN_STR_EMAIL" type="email" ng-required="true" autofocus>
+									<label for="FUN_STR_EMAIL">E-mail</label>
+								</div>
+								<div class="red-text" ng-messages="funcionarioForm.FUN_STR_EMAIL" ng-show="funcionarioForm.FUN_STR_EMAIL.$dirty">
+									<span class="col" ng-message="$error.required">Preencha este campo!</span>
+									<span class="col" ng-message="$invalid">Preencha no formato correto: exemplo@mail.com</span>
+								</div>
+							</div>
+
+							<!-- Senha-->
+							<div class="row">
+								<div class="input-field col s12">
+									<i class="material-icons prefix">lock</i>
+									<input name="FUN_STR_SENHA" id="FUN_STR_SENHA" ng-model="manipularFuncionario.FUN_STR_SENHA" type="password" ng-required="true">
+									<label for="FUN_STR_SENHA">Senha</label>
+								</div>
+								<div class="red-text" ng-messages="funcionarioForm.FUN_STR_SENHA" ng-show="funcionarioForm.FUN_STR_SENHA.$dirty">
+									<span class="col" ng-message="$error.required">Preencha este campo!</span>
+								</div>
+							</div>
+
+			
+					</div>
+					<div class="card-action">
+						<div class="row">
+							<div class="input-field col s12">
+								<button class="waves-effect waves-light btn" ng-click="login(manipularFuncionario)" ng-disabled="funcionarioForm.$invalid" type="submit">
+									Login
+								</button>	
+							</div>
+						</div>
+					</div>
+				</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</section>

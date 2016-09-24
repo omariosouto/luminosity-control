@@ -1,0 +1,56 @@
+.selected {
+	background-color: #ffee58 !important;
+}
+
+/* Menu */
+#sidenav-overlay {
+display: none !important;
+pointer-events: none !important;
+}
+#sidenav-overlay:first-child {
+pointer-events: auto !important;
+}
+
+/**Resets*/
+th a {
+    text-decoration: underline;
+}
+th {
+	border-radius: 0;
+	padding: 15px 10px;
+}
+/* Acordeon */
+.acord-body.active {	
+	display: block;
+	padding: 15px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+/* NavMenu */
+nav .brand-logo {
+	padding: 0 15px;
+}
+/* Table */
+table.striped > tbody > tr:nth-child(even) {
+    background-color: #e2e2e2;
+}
+/*Checkbox*/
+[type="checkbox"].filled-in:checked + label:after {
+	border: 2px solid #333;
+    background-color: #333;
+} 
+
+/* Listas de Dados */
+.listControl {
+	overflow: auto;
+	max-height: 500px;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+/* Helpers */
+.p-x-0 {
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
+.mb-30 {
+	margin-bottom: 30px;
+}
