@@ -2,11 +2,8 @@
 
 [![licence mit](https://img.shields.io/badge/licence-MIT-blue.svg)](https://github.com/afonsopacifer/open-source-boilerplate/blob/master/LICENSE.md)
 
-<p style="text-align: center;">
 
 ![Logo Luminosity Control](https://raw.githubusercontent.com/soutomario/luminosity-control/master/img/logo.png)
-
-</p>
 
 > Luminosity Control is a TCC project, open-source to manage locations.
 <br>
