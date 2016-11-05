@@ -1,5 +1,6 @@
 # Luminosity Control
-Luminosity Control is a TCC project cross-platform, open-source to manage locations.
+Luminosity Control is a TCC project, open-source to manage locations.
+This project is just an idea of how today is possible build cross-platforms applications with one code. 
 
 # Technologies
 
