@@ -1,9 +1,9 @@
 # Luminosity Control
 
 [![licence mit](https://img.shields.io/badge/licence-MIT-blue.svg)](https://github.com/afonsopacifer/open-source-boilerplate/blob/master/LICENSE.md)
-
+<div style="text-align:center">
 ![Logo Luminosity Control](https://raw.githubusercontent.com/soutomario/luminosity-control/master/img/logo.png)
-
+</div>
 > Luminosity Control is a TCC project, open-source to manage locations.
 <br>
 This project is just an idea of how today is possible build cross-platforms applications with one code. 
