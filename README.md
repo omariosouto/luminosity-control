@@ -1,5 +1,5 @@
 # Luminosity Control
-Luminosity Control is a TCC project, open-source to manage locations.
+Luminosity Control is a TCC project cross-platform, open-source to manage locations.
 
 # Technologies
 
@@ -9,21 +9,19 @@ Luminosity Control is a TCC project, open-source to manage locations.
 ### Front-End
 * HTML
 * CSS
-* JS, AngularJS
-* MaterializeCSS
+* JS
 
 ## Frameworks
 * Entity Framework
 * MaterializeCSS
+* AngularJS
 
 ### Authors:
->>>>>>> e129b43235b46b249e697751b3511177dd49057d
 * Mario Souto
 * Larissa Rodrigues
 * Guilherme Pozzi
  
 ### Platforms
-
 * Desktop (Electron)
 * Mobile (Apache Cordova)
 * Web
