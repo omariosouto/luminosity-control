@@ -1,7 +1,7 @@
 ﻿using System.Security.Cryptography;
 using System.Text;
 
-namespace LuminosityWebAPI.Api.Controllers
+namespace LuminosityWebAPI.Api.Commons
 {
     public class KeyGenerator
     {

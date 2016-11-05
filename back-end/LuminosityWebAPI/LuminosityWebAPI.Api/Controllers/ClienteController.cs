@@ -1,5 +1,7 @@
 ﻿using LuminosityWebAPI.Domain;
 using LuminosityWebAPI.Infra.DataContexts;
+using System;
+using System.Data;
 using System.Linq;
 using System.Net;
 using System.Net.Http;

@@ -3,3 +3,8 @@ C:\Users\mario\Documents\Visual Studio 2015\Projects\LuminosityWebAPI\Luminosity
 C:\Users\mario\Documents\Visual Studio 2015\Projects\LuminosityWebAPI\LuminosityWebAPI.Domain\obj\Debug\LuminosityWebAPI.Domain.dll
 C:\Users\mario\Documents\Visual Studio 2015\Projects\LuminosityWebAPI\LuminosityWebAPI.Domain\obj\Debug\LuminosityWebAPI.Domain.pdb
 C:\Users\mario\documents\visual studio 2015\Projects\LuminosityWebAPI\LuminosityWebAPI.Domain\obj\Debug\LuminosityWebAPI.Domain.csprojResolveAssemblyReference.cache
+D:\tcc\luminosity-control\back-end\LuminosityWebAPI\LuminosityWebAPI.Domain\bin\Debug\LuminosityWebAPI.Domain.dll
+D:\tcc\luminosity-control\back-end\LuminosityWebAPI\LuminosityWebAPI.Domain\bin\Debug\LuminosityWebAPI.Domain.pdb
+D:\tcc\luminosity-control\back-end\LuminosityWebAPI\LuminosityWebAPI.Domain\obj\Debug\LuminosityWebAPI.Domain.csprojResolveAssemblyReference.cache
+D:\tcc\luminosity-control\back-end\LuminosityWebAPI\LuminosityWebAPI.Domain\obj\Debug\LuminosityWebAPI.Domain.dll
+D:\tcc\luminosity-control\back-end\LuminosityWebAPI\LuminosityWebAPI.Domain\obj\Debug\LuminosityWebAPI.Domain.pdb

@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="Api">
+    <Position X="0.5" Y="0.5" Height="0.291" Width="1.648" />
+  </Comment>
+  <Comment CommentText="Domain">
+    <Position X="6.288" Y="0.5" Height="0.291" Width="1.648" />
+  </Comment>
+  <Comment CommentText="Infra">
+    <Position X="10.25" Y="0.5" Height="0.291" Width="1.648" />
+  </Comment>
+  <Class Name="LuminosityWebAPI.Api.FilterConfig">
+    <Position X="2.25" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>App_Start\FilterConfig.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LuminosityWebAPI.Api.WebApiConfig">
+    <Position X="2.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>App_Start\WebApiConfig.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LuminosityWebAPI.Api.WebApiApplication">
+    <Position X="0.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>Global.asax.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LuminosityWebAPI.Api.Commons.KeyGenerator" Collapsed="true">
+    <Position X="0.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Commons\KeyGenerator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LuminosityWebAPI.Api.Controllers.ClienteController">
+    <Position X="0.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>Controllers\ClienteController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LuminosityWebAPI.Api.Controllers.FuncionarioController">
+    <Position X="4" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAQAAAEAgAAEAAAAAAAAAAAAIAAAAQAAAA=</HashCode>
+      <FileName>Controllers\FuncionarioController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LuminosityWebAPI.Api.Controllers.PedidoController">
+    <Position X="2.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAQIAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controllers\PedidoController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LuminosityWebAPI.Api.Controllers.VeiculoController">
+    <Position X="4" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQEAAAAAAAAIBAAAAAAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>Controllers\VeiculoController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LuminosityWebAPI.Domain.Cliente">
+    <Position X="6.25" Y="1" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="LuminosityWebAPI.Domain.Funcionario">
+    <Position X="8" Y="1" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="LuminosityWebAPI.Domain.Pedido">
+    <Position X="6.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="LuminosityWebAPI.Domain.Veiculo">
+    <Position X="8" Y="5.25" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="LuminosityWebAPI.Infra.DataContexts.LuminosityWebApiDataContext">
+    <Position X="10.25" Y="1" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="LuminosityWebAPI.Infra.DataContexts.LuminosityWebApiDataContextInitializer">
+    <Position X="12" Y="1" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

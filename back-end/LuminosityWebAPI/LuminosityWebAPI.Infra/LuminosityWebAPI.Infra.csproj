@@ -51,6 +51,9 @@
   <ItemGroup>
     <Compile Include="DataContexts\LuminosityWebApiDataContext.cs" />
     <Compile Include="Mappings\ClienteMap.cs" />
+    <Compile Include="Mappings\FuncionarioMap.cs" />
+    <Compile Include="Mappings\PedidoMap.cs" />
+    <Compile Include="Mappings\VeiculoMap.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

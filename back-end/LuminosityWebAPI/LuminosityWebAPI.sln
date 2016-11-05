@@ -9,6 +9,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LuminosityWebAPI.Infra", "L
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LuminosityWebAPI.Api", "LuminosityWebAPI.Api\LuminosityWebAPI.Api.csproj", "{F8F778F4-E845-49C0-879B-D0DE6101E6CD}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Diagrams", "Diagrams", "{16419852-2ED6-46E7-932F-8063AA1B4370}"
+	ProjectSection(SolutionItems) = preProject
+		LuminosityWebAPI.Api\AppClassDiagram.cd = LuminosityWebAPI.Api\AppClassDiagram.cd
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

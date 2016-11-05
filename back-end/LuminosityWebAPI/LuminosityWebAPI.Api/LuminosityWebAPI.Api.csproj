@@ -164,12 +164,17 @@
       <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
     </Reference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="AppClassDiagram.cd" />
+  </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\ClienteController.cs" />
     <Compile Include="Commons\KeyGenerator.cs" />
+    <Compile Include="Controllers\FuncionarioController.cs" />
+    <Compile Include="Controllers\PedidoController.cs" />
+    <Compile Include="Controllers\VeiculoController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>

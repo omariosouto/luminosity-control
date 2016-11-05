@@ -10,3 +10,15 @@ C:\Users\mario\Documents\Visual Studio 2015\Projects\LuminosityWebAPI\Luminosity
 C:\Users\mario\Documents\Visual Studio 2015\Projects\LuminosityWebAPI\LuminosityWebAPI.Infra\obj\Debug\LuminosityWebAPI.Infra.csprojResolveAssemblyReference.cache
 C:\Users\mario\Documents\Visual Studio 2015\Projects\LuminosityWebAPI\LuminosityWebAPI.Infra\obj\Debug\LuminosityWebAPI.Infra.dll
 C:\Users\mario\Documents\Visual Studio 2015\Projects\LuminosityWebAPI\LuminosityWebAPI.Infra\obj\Debug\LuminosityWebAPI.Infra.pdb
+D:\tcc\luminosity-control\back-end\LuminosityWebAPI\LuminosityWebAPI.Infra\bin\Debug\LuminosityWebAPI.Infra.dll.config
+D:\tcc\luminosity-control\back-end\LuminosityWebAPI\LuminosityWebAPI.Infra\bin\Debug\LuminosityWebAPI.Infra.dll
+D:\tcc\luminosity-control\back-end\LuminosityWebAPI\LuminosityWebAPI.Infra\bin\Debug\LuminosityWebAPI.Infra.pdb
+D:\tcc\luminosity-control\back-end\LuminosityWebAPI\LuminosityWebAPI.Infra\bin\Debug\EntityFramework.dll
+D:\tcc\luminosity-control\back-end\LuminosityWebAPI\LuminosityWebAPI.Infra\bin\Debug\EntityFramework.SqlServer.dll
+D:\tcc\luminosity-control\back-end\LuminosityWebAPI\LuminosityWebAPI.Infra\bin\Debug\LuminosityWebAPI.Domain.dll
+D:\tcc\luminosity-control\back-end\LuminosityWebAPI\LuminosityWebAPI.Infra\bin\Debug\LuminosityWebAPI.Domain.pdb
+D:\tcc\luminosity-control\back-end\LuminosityWebAPI\LuminosityWebAPI.Infra\bin\Debug\EntityFramework.xml
+D:\tcc\luminosity-control\back-end\LuminosityWebAPI\LuminosityWebAPI.Infra\bin\Debug\EntityFramework.SqlServer.xml
+D:\tcc\luminosity-control\back-end\LuminosityWebAPI\LuminosityWebAPI.Infra\obj\Debug\LuminosityWebAPI.Infra.csprojResolveAssemblyReference.cache
+D:\tcc\luminosity-control\back-end\LuminosityWebAPI\LuminosityWebAPI.Infra\obj\Debug\LuminosityWebAPI.Infra.dll
+D:\tcc\luminosity-control\back-end\LuminosityWebAPI\LuminosityWebAPI.Infra\obj\Debug\LuminosityWebAPI.Infra.pdb
