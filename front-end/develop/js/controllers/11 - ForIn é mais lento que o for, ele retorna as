@@ -1,0 +1,45 @@
+11) 
+-- Loops
+...
+- DoWhile sempre executa a instrução antes de validar se ela é verdadeira
+- ForIn é mais lento que o for, ele retorna as propriedades de um objeto.
+
+-- Saltos
+São usados para pular determinados blocos de código
+- return: é um exemplo de saida usado em funções.
+- break: também é um salto usado em switch. Caso o switch não tenha break
+o código não printa os cases da forma esperada. O break também
+serve para parar algumas instruções
+- continue:
+Caso uma validação seja verdadeiro ou falso, ele salta para a próxima volta
+do laço
+
+* FAZER EXERCÍCIOS
+
+
+12)
+Objetos são mutaveis: São coisas que podem ter seus valores alterados.
+Manipulados por referencia: Cada objeto criado é um objeto diferente.
+- Referencia:
+	var obj = {n1: 1, n2: 2};
+	var obj2 = {n1: 1, n2: 2};
+
+	obj == obj2 // => false
+
+	objCopy = obj;
+	objCopy == obj // => true
+
+	objCopy.n1 = 5;
+
+	console.log(obj);
+	{n1: 5, n2: 2}
+
+Criação de Objetos:
+- Literais
+- Com o new
+- Com Object.create();
+	Um novo objeto é criado herdando valores do obj1
+
+
+
+

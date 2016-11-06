@@ -1,0 +1,29 @@
+{
+  "name": "packaging-distributing-electron-apps",
+  "version": "0.1.0",
+  "description": "",
+  "main": "./develop/main.js",
+  "scripts": {
+    "start": "electron .",
+    "package": "asar pack LuminosityControl.app/Resources/app LuminosityControl.app/Resources/app.asar",
+    "build": "electron-packager . LuminosityControl --ignore=node_modules/electron-* ; copy ./Icon.icns ./LuminosityControl.app/resources/atom.icns"
+  },
+  "author": "Kyle Robinson Young <kyle@dontkry.com> (http://dontkry.com)",
+  "license": "MIT",
+  "devDependencies": {
+    "asar": "^0.6.1",
+    "electron-packager": "^3.2.0",
+    "electron-prebuilt": "^0.25.2",
+    "Q": "0.0.1",
+    "browser-sync": "^2.16.0",
+    "fs-jetpack": "^0.9.2",
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-concat": "^2.6.0",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-sass": "^2.3.2",
+    "gulp-uglify": "^2.0.0",
+    "rcedit": "^0.7.0",
+    "run-sequence": "^1.2.2"
+  }
+}

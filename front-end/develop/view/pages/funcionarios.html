@@ -1,0 +1,240 @@
+<!-- Modal Structure -->
+<div id="modal1" class="modal modal-fixed-footer">
+<div class="modal-content">
+  <h4>{{ manipularFuncionarioTitle }}</h4>
+
+<form name="funcionarioForm" class="col">
+
+	<!-- Nome -->
+	<div class="row">
+		<div class="col s12">
+			<label for="FUN_STR_NOME">Nome <span class="red-text darken-4">*</span></label>
+			<input name="FUN_STR_NOME" id="FUN_STR_NOME" ng-model="manipularFuncionario.FUN_STR_NOME" type="text" ng-required="true">
+		</div>
+		<div class="red-text" ng-messages="funcionarioForm.FUN_STR_NOME.$error" ng-show="funcionarioForm.FUN_STR_NOME.$dirty">
+			<span class="col" ng-message="required">Preencha este campo!</span>
+		</div>
+	</div>		
+
+	<!-- Sobrenome -->
+ 	<div class="row">
+		<div class="col s12">
+			<label for="FUN_STR_SOBRENOME">Sobrenome <span class="red-text darken-4">*</span></label>
+			<input name="FUN_STR_SOBRENOME" id="FUN_STR_SOBRENOME" ng-model="manipularFuncionario.FUN_STR_SOBRENOME" type="text" ng-required="true">
+		</div>
+		<div class="red-text" ng-messages="funcionarioForm.FUN_STR_SOBRENOME.$error" ng-show="funcionarioForm.FUN_STR_SOBRENOME.$dirty">
+			<span class="col" ng-message="required">Preencha este campo!</span>
+		</div>
+	</div>
+
+	<!-- Email-->
+	<div class="row">
+		<div class="col s12">
+			<label for="FUN_STR_EMAIL">E-mail <span class="red-text darken-4">*</span></label>
+			<input name="FUN_STR_EMAIL" id="FUN_STR_EMAIL" ng-model="manipularFuncionario.FUN_STR_EMAIL" type="email" ng-required="true">
+		</div>
+		<div class="red-text" ng-messages="funcionarioForm.FUN_STR_EMAIL" ng-show="funcionarioForm.FUN_STR_EMAIL.$dirty">
+			<span class="col" ng-message="$error.required">Preencha este campo!</span>
+			<span class="col" ng-message="$invalid">Preencha no formato correto: exemplo@mail.com</span>
+		</div>
+	</div>
+	
+	<!-- Senha -->
+	<div class="row">
+		<div class="col s12">
+			<label for="FUN_STR_SENHA">Senha <span class="red-text darken-4">*</span></label>
+			<input name="FUN_STR_SENHA" id="FUN_STR_SENHA" ng-model="manipularFuncionario.FUN_STR_SENHA" type="password" ng-required="true">
+		</div>
+		<div class="red-text" ng-messages="funcionarioForm.FUN_STR_SENHA.$error" ng-show="funcionarioForm.FUN_STR_SENHA.$dirty">
+			<span class="col" ng-message="required">Preencha este campo!</span>
+		</div>
+	</div>
+
+	<!-- CPF -->
+ 	<div class="row">
+		<div class="col s12">
+			<label for="FUN_STR_CPF">CPF <span class="red-text darken-4">*</span></label>
+			<input name="FUN_STR_CPF" id="FUN_STR_CPF" ng-model="manipularFuncionario.FUN_STR_CPF" type="text" ng-required="true" ui-cpf-format>
+		</div>
+		<div class="red-text" ng-messages="funcionarioForm.FUN_STR_CPF" ng-show="funcionarioForm.FUN_STR_CPF.$dirty">
+			<span class="col" ng-message="$invalid">Preencha este campo!</span>
+		</div>
+	</div>
+
+	<!-- Telefone -->
+	<div class="row">
+		<div class="col s12">
+			<label for="FUN_STR_TEL">Telefone <span class="red-text darken-4">*</span></label>
+			<input name="FUN_STR_TEL" id="FUN_STR_TEL" ng-model="manipularFuncionario.FUN_STR_TEL" type="text" ng-required="true" ui-tel-format>
+		</div>
+		<div class="red-text" ng-messages="funcionarioForm.FUN_STR_TEL" ng-show="funcionarioForm.FUN_STR_TEL.$dirty">
+			<span class="col" ng-message="$invalid">Preencha este campo!</span>
+		</div>
+	</div>
+
+	<!-- Celular -->
+	<div class="row">
+		<div class="col s12">
+			<label for="FUN_STR_CEL">Celular <span class="red-text darken-4">*</span></label>
+			<input name="FUN_STR_CEL" id="FUN_STR_CEL" ng-model="manipularFuncionario.FUN_STR_CEL" type="text" ng-required="true" ui-cel-format>
+		</div>
+		<div class="red-text" ng-messages="funcionarioForm.FUN_STR_CEL" ng-show="funcionarioForm.FUN_STR_CEL.$dirty">
+			<span class="col" ng-message="$invalid">Preencha este campo!</span>
+		</div>
+	</div>
+
+	<!-- Data de Nascimento -->
+	<div class="row">
+		<div class="col s12">
+			<label for="FUN_DAT_NASCIMENTO">Data de Nascimento <span class="red-text darken-4">*</span></label>
+			<input name="FUN_DAT_NASCIMENTO" id="FUN_DAT_NASCIMENTO" placeholder="Ex: 00/00/0000" ng-model="manipularFuncionario.FUN_DAT_NASCIMENTO" type="text" ui-date-format ng-required="true">
+		</div>
+		<div class="red-text" ng-messages="funcionarioForm.FUN_DAT_NASCIMENTO" ng-show="funcionarioForm.FUN_DAT_NASCIMENTO.$dirty">
+			<span class="col" ng-message="$invalid">Preencha este campo!</span>
+		</div>
+	</div>
+
+	<!-- Nível de Acesso -->
+ 	<div class="row">
+		<div class="col s12">
+			<div class="row"><label>Nível de Acesso <span class="red-text darken-4">*</span></label> <br></div>
+			<select ng-model="manipularFuncionario.FUN_INT_ACESSO"
+					ng-options="acesso.valor as acesso.nome for acesso in nivelAcesso  " ng-required="true">
+				<option value="">Escolha uma Opção</option>
+			</select>
+		</div>
+
+		<div class="red-text" ng-messages="funcionarioForm.FUN_INT_ACESSO.$error" ng-show="funcionarioForm.FUN_INT_ACESSO.$dirty">
+			<span class="col" ng-message="required">Escolha uma opção!</span>
+		</div>
+	</div>
+
+
+	<!-- Endereço -->
+	<div class="row">
+		<div class="col s12">
+			<label for="FUN_STR_ENDRECO">Endereço <span class="red-text darken-4">*</span></label>
+			<input name="FUN_STR_ENDRECO" id="FUN_STR_ENDRECO" ng-model="manipularFuncionario.FUN_STR_ENDRECO" type="text" ng-required="true">
+		</div>
+		<div class="red-text" ng-messages="funcionarioForm.FUN_STR_ENDRECO.$error" ng-show="funcionarioForm.FUN_STR_ENDRECO.$dirty">
+			<span class="col" ng-message="required">Preencha este campo!</span>
+		</div>
+	</div>	
+
+
+	<button class="waves-effect waves-light btn green darken-4"
+			ng-hide="btnAcao"
+			ng-click="adicionarFuncionario(manipularFuncionario)"
+			ng-disabled="funcionarioForm.$invalid">
+		Adicionar Funcionário
+	</button>
+
+	<button class="waves-effect waves-light btn blue darken-4"
+			ng-show="btnAcao"
+			ng-click="alterarFuncionario(manipularFuncionario)"
+			ng-disabled="funcionarioForm.$invalid">
+		Alterar Funcionário
+	</button>
+</form>
+
+
+
+
+</div>
+<div class="modal-footer">
+</div>
+</div>
+<section>
+	<div class="container">
+		<div class="card-panel grey lighten-3">
+			<h3 class="center-align">{{ pageTitle }}</h3>
+
+			<!-- Filtro de Lista -->
+			<nav>
+				<div class="nav-wrapper">
+					<form autocomplete="off">
+						<div class="input-field grey darken-3 white-text">
+							<input id="search" type="search" ng-model="filterSearch" placeholder="Quem você está buscando?">
+							<label for="search"><i class="material-icons">search</i></label>
+							<i class="material-icons">close</i>
+						</div>
+					</form>
+				</div>
+			</nav> <!-- ./Filtro de Lista -->
+
+			<br>
+
+
+			<ul class="collapsible" data-collapsible="accordion" data-collapsible="expandable">
+				<li>
+					<div class="collapse-acord collapsible-header acord-header" ng-click="abrirModal(funcionario, 1)"><i class="material-icons">add_circle</i>Adicionar novo(a)</div>
+				</li>
+			</ul>
+     
+			<!-- Tabela para renderizar listas -->
+			<div class="listControl">
+				<table class="striped bordered">
+					<thead>
+						<tr class="grey darken-1 white-text">
+							<th> * </th>
+							<th>Editar</th>
+							<th><a href="" ng-click="ordernarPor('FUN_INT_ID')">Id</a></th>
+							<th><a href="" ng-click="ordernarPor('FUN_STR_NOME')">Nome</a></th>
+							<!-- <th>Sobrenome </th> -->
+							<th>CPF</th>
+							<th>Telefone</th>
+							<th>Celular</th>
+							<th><a href="" ng-click="ordernarPor('FUN_DAT_NASCIMENTO')">Nascimento</a></th>
+							<th><a href="" ng-click="ordernarPor('FUN_DAT_REGISTRO')">Registro</a></th>
+							<th>Nivel</th>
+							<th>Endereco</th>
+						</tr>
+					</thead>
+					
+
+					<tbody>
+						<tr ng-class="{'selected': funcionario.selecionado}" ng-repeat="funcionario in funcionarios | filter: filterSearch | orderBy:criterioDeOrdenacao:direcaoDaOrdenacao ">
+							<td>
+								<span>
+								  <input type="checkbox" ng-model="funcionario.selecionado" class="filled-in" id="filled-in-box-{{ funcionario.FUN_INT_ID }}"/>
+								  <label for="filled-in-box-{{ funcionario.FUN_INT_ID }}"></label>
+							  	</span>
+							 </td>
+							<td><a ng-click="abrirModal(funcionario, 0)"><i class="material-icons">mode_edit</i></a></td>
+							<td><strong>{{ funcionario.FUN_INT_ID }}</strong></td>
+							<td><a ng-click="abrirModal(funcionario, 0)">{{ funcionario.FUN_STR_NOME + " " + funcionario.FUN_STR_SOBRENOME | uppercase }}</a></td>
+							<!-- <td>{{ funcionario.sobrenome }} </td> -->
+							<td>{{ funcionario.FUN_STR_CPF }}</td>
+							<td>{{ funcionario.FUN_STR_TEL }}</td>
+							<td>{{ funcionario.FUN_STR_CEL }}</td>
+							<td>{{ funcionario.FUN_DAT_NASCIMENTO | date: 'dd/MM/yyyy' }}</td>
+							<td>{{ funcionario.FUN_DAT_REGISTRO | date: 'dd/MM/yyyy | HH:mm:ss' }}</td>
+							<td class="center-align">{{ funcionario.FUN_INT_ACESSO }}</td>
+							<td>{{ funcionario.FUN_STR_ENDRECO }}</td>
+						</tr>
+						<tr class="collection-item center-align" ng-if="funcionarios.length === 0">
+							<td colspan="11" class="col s12 center-align">Nenhum disponível =(</td>
+						</tr>
+					</tbody>
+				</table> <!-- ./Tabela para renderizar listas -->
+			</div>
+			<br>	
+
+
+
+			<button class="waves-effect waves-light btn red darken-4"
+					ng-click="apagarFuncionario(funcionarios)"
+					ng-disabled="!isFuncionarioSelecionado(funcionarios)">
+				Apagar Funcionário
+			</button>
+
+		</div>	
+	</div>
+	
+
+	<footer class="center-align">
+		<br>
+		{{ requestStatus }}
+		<br>
+	</footer>
+</section>

@@ -1,0 +1,189 @@
+<!-- Modal Structure -->
+<div id="modal1" class="modal modal-fixed-footer">
+<div class="modal-content">
+  <h4>{{ manipularVeiculoTitle }}</h4>
+
+<form name="veiculoForm" class="col">
+
+	<!-- Modelo -->
+	<div class="row">
+		<div class="col s12">
+			<label for="VEI_STR_MODELO">Modelo <span class="red-text darken-4">*</span></label>
+			<input name="VEI_STR_MODELO" id="VEI_STR_MODELO" ng-model="manipularVeiculo.VEI_STR_MODELO" type="text" ng-required="true">
+		</div>
+		<div class="red-text" ng-messages="veiculoForm.VEI_STR_MODELO.$error" ng-show="veiculoForm.VEI_STR_MODELO.$dirty">
+			<span class="col" ng-message="required">Preencha este campo!</span>
+		</div>
+	</div>	
+
+	<!-- Marca -->
+	<div class="row">
+		<div class="col s12">
+			<label for="VEI_STR_MARCA">Marca <span class="red-text darken-4">*</span></label>
+			<input name="VEI_STR_MARCA" id="VEI_STR_MARCA" ng-model="manipularVeiculo.VEI_STR_MARCA" type="text" ng-required="true">
+		</div>
+		<div class="red-text" ng-messages="veiculoForm.VEI_STR_MARCA.$error" ng-show="veiculoForm.VEI_STR_MARCA.$dirty">
+			<span class="col" ng-message="required">Preencha este campo!</span>
+		</div>
+	</div>		
+
+	<!-- KM -->
+	<div class="row">
+		<div class="col s12">
+			<label for="VEI_STR_KM">KM <span class="red-text darken-4">*</span></label>
+			<input name="VEI_STR_KM" id="VEI_STR_KM" ng-model="manipularVeiculo.VEI_STR_KM" type="text" ng-required="true">
+		</div>
+		<div class="red-text" ng-messages="veiculoForm.VEI_STR_KM.$error" ng-show="veiculoForm.VEI_STR_KM.$dirty">
+			<span class="col" ng-message="required">Preencha este campo!</span>
+		</div>
+	</div>
+
+	<!-- PLACA -->
+	<div class="row">
+		<div class="col s12">
+			<label for="VEI_STR_PLACA">PLACA <span class="red-text darken-4">*</span></label>
+			<input name="VEI_STR_PLACA" id="VEI_STR_PLACA" ng-model="manipularVeiculo.VEI_STR_PLACA" type="text" ng-required="true" ui-placa-format>
+		</div>
+		<div class="red-text" ng-messages="veiculoForm.VEI_STR_PLACA.$error" ng-show="veiculoForm.VEI_STR_PLACA.$dirty">
+			<span class="col" ng-message="required">Preencha este campo!</span>
+		</div>
+	</div>
+
+	<!-- Ano -->
+	<div class="row">
+		<div class="col s12">
+			<label for="VEI_DAT_ANO">Ano <span class="red-text darken-4">*</span></label>
+			<input name="VEI_DAT_ANO" id="VEI_DAT_ANO" placeholder="Ex: 00/00/0000" ng-model="manipularVeiculo.VEI_DAT_ANO" type="text" ui-date-format ng-required="true">
+		</div>
+		<div class="red-text" ng-messages="veiculoForm.VEI_DAT_ANO.$error" ng-show="veiculoForm.VEI_DAT_ANO.$dirty">
+			<span class="col" ng-message="required">Preencha este campo!</span>
+		</div>
+	</div>
+
+	<!-- Status -->
+ 	<div class="row" ng-show="btnAcao">
+		<div class="col s12">
+			<div class="row"><label>Disponibilidade do Veículo <span class="red-text darken-4">*</span></label> <br></div>
+			<select ng-model="manipularVeiculo.VEI_STR_STATUS"
+					ng-options="acesso.valor as acesso.nome for acesso in statusAcesso  " ng-required="true">
+				<option value="">Escolha uma Opção</option>
+			</select>
+		</div>
+
+		<div class="red-text" ng-messages="veiculoForm.VEI_STR_STATUS.$error" ng-show="veiculoForm.VEI_STR_STATUS.$dirty">
+			<span class="col" ng-message="required">Escolha uma opção!</span>
+		</div>
+	</div>
+	
+	<button class="waves-effect waves-light btn green darken-4"
+			ng-hide="btnAcao"
+			ng-click="adicionarVeiculo(manipularVeiculo)"
+			ng-disabled="veiculoForm.$invalid">
+		Adicionar Veículo
+	</button>
+
+	<button class="waves-effect waves-light btn blue darken-4"
+			ng-show="btnAcao"
+			ng-click="alterarVeiculo(manipularVeiculo)"
+			ng-disabled="veiculoForm.$invalid">
+		Alterar Veículo
+	</button>
+</form>
+
+
+
+</div>
+<div class="modal-footer">
+</div>
+</div>
+<section>
+	<div class="container">
+		<div class="card-panel grey lighten-3">
+			<h3 class="center-align">{{ pageTitle }}</h3>
+
+			<!-- Filtro de Lista -->
+			<nav>
+				<div class="nav-wrapper">
+					<form autocomplete="off">
+						<div class="input-field grey darken-3 white-text">
+							<input id="search" type="search" ng-model="filterSearch" placeholder="Quem você está buscando?">
+							<label for="search"><i class="material-icons">search</i></label>
+							<i class="material-icons">close</i>
+						</div>
+					</form>
+				</div>
+			</nav> <!-- ./Filtro de Lista -->
+
+			<br>
+
+
+			<ul class="collapsible" data-collapsible="accordion" data-collapsible="expandable">
+				<li>
+					<div class="collapse-acord collapsible-header acord-header" ng-click="abrirModal(veiculo, 1)"><i class="material-icons">add_circle</i>Adicionar novo(a)</div>
+				</li>
+			</ul>
+     
+			<!-- Tabela para renderizar listas -->
+			<div class="listControl">
+								<table class="striped bordered">
+					<thead>
+						<tr class="grey darken-1 white-text">
+							<th> * </th>
+							<th>Editar</th>
+							<th><a href="" ng-click="ordernarPor('VEI_INT_ID')">Id</a></th>
+							<th><a href="" ng-click="ordernarPor('VEI_STR_MODELO')">Modelo</a></th>
+							<th><a href="" ng-click="ordernarPor('VEI_STR_MARCA')">Marca</a></th>
+							<!-- <th>Sobrenome </th> -->
+							<th><a href="" ng-click="ordernarPor('VEI_STR_KM')">Km</a></th>
+							<th>Ano</th>
+							<th>Placa</th>
+							<th><a href="" ng-click="ordernarPor('VEI_STR_STATUS')">Status</a></th>
+							<th><a href="" ng-click="ordernarPor('VEI_DAT_REGISTRO')">Registro</a></th>
+						</tr>
+					</thead>
+					
+
+					<tbody>
+						<tr ng-class="{'selected': veiculo.selecionado}" ng-repeat="veiculo in veiculos | filter: filterSearch | orderBy:criterioDeOrdenacao:direcaoDaOrdenacao ">
+							<td>
+								<span>
+								  <input type="checkbox" ng-model="veiculo.selecionado" class="filled-in" id="filled-in-box-{{ veiculo.VEI_INT_ID }}"/>
+								  <label for="filled-in-box-{{ veiculo.VEI_INT_ID }}"></label>
+							  	</span>
+							 </td>
+							<td><a ng-click="abrirModal(veiculo, 0)"><i class="material-icons">mode_edit</i></a></td>
+							<td><strong>{{ veiculo.VEI_INT_ID }}</strong></td>
+							<td><a ng-click="abrirModal(veiculo, 0)">{{ veiculo.VEI_STR_MODELO }}</a></td>
+							<td>{{ veiculo.VEI_STR_MARCA }}</td>
+							<td>{{ veiculo.VEI_STR_KM }}</td>
+							<td>{{ veiculo.VEI_DAT_ANO  | date: 'dd/MM/yyyy' }}</td>
+							<td>{{ veiculo.VEI_STR_PLACA }}</td>
+							<td class="center-align">{{ veiculo.VEI_STR_STATUS }}</td>
+							<td>{{ veiculo.VEI_DAT_REGISTRO | date: 'dd/MM/yyyy | HH:mm:ss' }}</td>
+						</tr>
+						<tr class="collection-item center-align" ng-if="veiculos.length === 0">
+							<td colspan="11" class="col s12 center-align">Nenhum disponível =(</td>
+						</tr>
+					</tbody>
+				</table> <!-- ./Tabela para renderizar listas -->
+			</div>
+			<br>	
+
+
+
+			<button class="waves-effect waves-light btn red darken-4"
+					ng-click="apagarVeiculo(veiculos)"
+					ng-disabled="!isVeiculoSelecionado(veiculos)">
+				Apagar Veiculo
+			</button>
+
+		</div>	
+	</div>
+	
+
+	<footer class="center-align">
+		<br>
+		{{ requestStatus }}
+		<br>
+	</footer>
+</section>

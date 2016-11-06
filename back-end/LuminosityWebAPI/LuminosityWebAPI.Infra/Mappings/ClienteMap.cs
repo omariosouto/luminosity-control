@@ -13,9 +13,9 @@ namespace LuminosityWebAPI.Infra.Mappings
             Property(x => x.CLI_STR_NOME).HasMaxLength(50).IsRequired();
             Property(x => x.CLI_STR_SOBRENOME).HasMaxLength(60).IsRequired();
             Property(x => x.CLI_STR_EMAIL).HasMaxLength(60).IsRequired();
-            Property(x => x.CLI_STR_CPF).HasMaxLength(14).IsRequired();
-            Property(x => x.CLI_STR_TEL).HasMaxLength(15).IsRequired();
-            Property(x => x.CLI_STR_CEL).HasMaxLength(15).IsRequired();
+            Property(x => x.CLI_STR_CPF).HasMaxLength(20).IsRequired();
+            Property(x => x.CLI_STR_TEL).HasMaxLength(20).IsRequired();
+            Property(x => x.CLI_STR_CEL).HasMaxLength(20).IsRequired();
             Property(x => x.CLI_DAT_REGISTRO).IsRequired();
             Property(x => x.CLI_DAT_NASCIMENTO).IsRequired();
             Property(x => x.CLI_STR_ENDRECO).HasMaxLength(150).IsRequired();

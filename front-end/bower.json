@@ -1,0 +1,20 @@
+{
+  "name": "develop",
+  "description": "",
+  "main": "gulpfile.js",
+  "license": "ISC",
+  "homepage": "https://github.com/soutomario/luminosity-control",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "angularjs#^1.5.8",
+    "angular-route": "^1.5.8",
+    "angular-messages": "^1.5.8",
+    "materialize": "^0.97.7"
+  }
+}
