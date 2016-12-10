@@ -33,3 +33,5 @@ This project is just an idea of how today is possible build cross-platforms appl
 * Desktop (Electron)
 * Mobile (Apache Cordova)
 * Web
+
+![System](https://mariosouto.com/luminosity-control/img/gif-usando-app.gif)
